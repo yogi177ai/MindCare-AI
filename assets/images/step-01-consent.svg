@@ -1,0 +1,10 @@
+<svg width="200" height="160" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A shield representing consent, with a bounded trail of memory dots">
+  <rect width="200" height="160" fill="none"/>
+  <path d="M100 28 L138 42 V78 C138 104 122 122 100 132 C78 122 62 104 62 78 V42 Z"
+        fill="#DCEAE3" stroke="#17493D" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M83 79 L95 91 L119 65" stroke="#17493D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="150" cy="100" r="4.5" fill="#1F6F5C"/>
+  <circle cx="164" cy="108" r="3.6" fill="#1F6F5C" opacity="0.65"/>
+  <circle cx="176" cy="118" r="2.8" fill="#1F6F5C" opacity="0.35"/>
+  <path d="M143 92 C148 96 152 98 152 98" stroke="#1F6F5C" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+</svg>

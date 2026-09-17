@@ -1,0 +1,942 @@
+/* ---------------------------------------------------------------
+   MindCare AI — design tokens
+   Cream + deep teal, one warm alert red reserved for the escalation
+   step only. Fraunces for display type (carries the editorial,
+   human warmth this brand needs), Inter for everything functional.
+------------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --cream: #f6f1e7;
+  --cream-card: #fbf8f2;
+  --ink: #1c2420;
+  --ink-soft: #4a534d;
+  --teal-deep: #17493d;
+  --teal: #1f6f5c;
+  --teal-soft: #dceae3;
+  --teal-softer: #eef4f0;
+  --line: #ded5c2;
+  --alert: #b5482d;
+
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --max: 1120px;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img, svg { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  color: var(--teal-deep);
+  line-height: 1.15;
+  margin: 0;
+  font-weight: 500;
+}
+
+h1 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.7rem, 3.2vw, 2.35rem); }
+h3 { font-size: 1.22rem; font-weight: 600; }
+
+p { margin: 0 0 1em; color: var(--ink-soft); max-width: 62ch; }
+
+.section {
+  padding: 52px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section:first-of-type { border-top: none; }
+
+.section-head {
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+
+.section-head .kicker {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--teal);
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.98rem;
+  padding: 13px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn-primary { background: var(--teal); color: var(--cream); }
+.btn-primary:hover { background: var(--teal-deep); }
+
+.btn-ghost { border-color: var(--teal-deep); color: var(--teal-deep); background: transparent; }
+.btn-ghost:hover { background: var(--teal-softer); }
+
+.btn-on-dark { background: var(--cream); color: var(--teal-deep); }
+.btn-on-dark:hover { background: #fff; }
+
+/* --- Nav ------------------------------------------------------ */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(246, 241, 231, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex: none;
+  background: #fff;
+  border-radius: 15px;
+  padding: 7px;
+  box-shadow: 0 6px 14px -4px rgba(23, 73, 61, 0.28);
+}
+
+.brand-tile img { width: 100%; height: 100%; object-fit: contain; }
+
+.brand-text {
+  height: 38px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.nav-links a:hover { color: var(--teal); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--teal-deep);
+  margin: 5px 0;
+}
+
+/* --- Hero -------------------------------------------------------- */
+
+.hero {
+  padding: 32px 0 44px;
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.hero h1 { margin-bottom: 16px; }
+
+.hero .support {
+  font-size: 1.05rem;
+  max-width: 50ch;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 14px;
+  margin: 18px 0 22px;
+  flex-wrap: wrap;
+}
+
+.trust-line {
+  font-size: 0.92rem;
+  color: var(--teal-deep);
+  font-weight: 600;
+}
+
+.trust-line + .trust-line {
+  margin-top: 8px;
+}
+
+.trust-line--bold {
+  font-weight: 700;
+  font-size: 0.96rem;
+}
+
+.trust-badge {
+  display: inline-block;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 0.9rem;
+  background: rgba(31, 111, 92, 0.1);
+  border: 1px solid rgba(31, 111, 92, 0.18);
+  padding: 8px 16px;
+  border-radius: 999px;
+  backdrop-filter: blur(2px);
+}
+
+.trust-badge .sep {
+  color: rgba(23, 73, 61, 0.35);
+}
+
+.trust-line .sep {
+  color: rgba(23, 73, 61, 0.3);
+  margin: 0 10px;
+  font-weight: 400;
+}
+
+/* Phone mockup — tilted device frame around the chat demo */
+
+.phone-mock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0 0;
+}
+
+.phone-frame {
+  position: relative;
+  width: 270px;
+  background: linear-gradient(165deg, #2b302c, #141815);
+  border-radius: 40px;
+  padding: 11px;
+  transform: rotate(5deg);
+  box-shadow:
+    0 40px 64px -24px rgba(23, 73, 61, 0.45),
+    0 14px 27px -14px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 2px rgba(255, 255, 255, 0.04);
+}
+
+.phone-notch {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 67px;
+  height: 16px;
+  background: #141815;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.phone-btn {
+  position: absolute;
+  background: #1c211d;
+}
+
+.phone-btn--power {
+  right: -2px;
+  top: 104px;
+  width: 2px;
+  height: 45px;
+  border-radius: 0 2px 2px 0;
+}
+
+.phone-btn--vol1 {
+  left: -2px;
+  top: 86px;
+  width: 2px;
+  height: 27px;
+  border-radius: 2px 0 0 2px;
+}
+
+.phone-btn--vol2 {
+  left: -2px;
+  top: 122px;
+  width: 2px;
+  height: 27px;
+  border-radius: 2px 0 0 2px;
+}
+
+.phone-screen {
+  background: var(--cream-card);
+  border-radius: 27px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 470px;
+}
+
+.chat-card__head {
+  background: var(--teal-deep);
+  color: var(--cream);
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-card__head img { width: 26px; height: 26px; }
+
+.chat-card__head .who { font-weight: 600; font-size: 0.9rem; }
+.chat-card__head .sub { font-size: 0.72rem; opacity: 0.75; }
+
+.chat-card__body {
+  padding: 16px 13px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #efe9da;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.bubble {
+  padding: 9px 13px;
+  border-radius: 14px;
+  font-size: 0.84rem;
+  max-width: 86%;
+  line-height: 1.32;
+  animation: bubble-in 0.28s ease both;
+}
+
+@keyframes bubble-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bubble.them {
+  background: #fff;
+  border-bottom-left-radius: 4px;
+  align-self: flex-start;
+  color: var(--ink);
+}
+
+.bubble.me {
+  background: var(--teal-soft);
+  border-bottom-right-radius: 4px;
+  align-self: flex-end;
+  color: var(--teal-deep);
+}
+
+.bubble.typing {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 14px 16px;
+}
+
+.bubble.typing span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink-soft);
+  opacity: 0.5;
+  animation: typing-bounce 1.1s infinite ease-in-out;
+}
+
+.bubble.typing span:nth-child(2) { animation-delay: 0.15s; }
+.bubble.typing span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typing-bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+.chat-card__input {
+  display: flex;
+  gap: 8px;
+  padding: 11px 13px;
+  background: #fff;
+  border-top: 1px solid var(--line);
+}
+
+.chat-card__input input {
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.chat-card__input input:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.chat-card__input button {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: var(--teal);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.chat-card__input button:hover { background: var(--teal-deep); }
+
+.chat-card__note {
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  text-align: center;
+  margin: 14px 0 0;
+  max-width: 280px;
+}
+
+/* --- Problem quote ---------------------------------------------- */
+
+.quote-section { padding: 52px 0; }
+
+blockquote {
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+  color: var(--teal-deep);
+  line-height: 1.45;
+  margin: 0 0 16px;
+  max-width: 44ch;
+}
+
+blockquote footer {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  font-style: normal;
+}
+
+/* --- How it works / steps ---------------------------------------- */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.step {
+  background: var(--cream-card);
+  padding: 34px 32px 38px;
+}
+
+.step .num {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--teal);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.step img { width: 96px; height: auto; margin: 6px 0 18px; }
+
+.step h3 { margin-bottom: 8px; }
+.step p { margin-bottom: 0; font-size: 0.96rem; }
+
+/* --- Who it's for ------------------------------------------------ */
+
+.personas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.persona {
+  border-left: 2px solid var(--teal);
+  padding-left: 22px;
+}
+
+.persona .role {
+  font-size: 0.82rem;
+  text-transform: none;
+  color: var(--teal);
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.persona h3 { margin-bottom: 8px; font-size: 1.1rem; }
+.persona p { font-size: 0.95rem; margin-bottom: 0; }
+
+/* --- Safety model -------------------------------------------------- */
+
+.safety { background: var(--teal-deep); color: var(--cream); }
+.safety h2 { color: #fff; }
+.safety .section-head p { color: rgba(246, 241, 231, 0.78); }
+.safety .section-head .kicker { color: var(--teal-soft); }
+
+.rules {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 36px;
+  margin-bottom: 32px;
+}
+
+.rule {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(246, 241, 231, 0.16);
+}
+
+.rule .tag {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--teal-soft);
+  flex: none;
+  width: 74px;
+  font-size: 0.96rem;
+}
+
+.rule p {
+  margin: 0;
+  color: rgba(246, 241, 231, 0.85);
+  font-size: 0.95rem;
+  max-width: 46ch;
+}
+
+.callout {
+  background: rgba(246, 241, 231, 0.08);
+  border: 1px solid rgba(246, 241, 231, 0.24);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin-bottom: 32px;
+}
+
+.callout .tag {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--teal-soft);
+  font-size: 0.96rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.callout p { color: rgba(246, 241, 231, 0.9); margin: 0; max-width: 60ch; }
+
+.guardrails-note { font-size: 0.92rem; color: rgba(246, 241, 231, 0.78); max-width: 62ch; margin-bottom: 0; }
+
+/* --- Compliance strip --------------------------------------------- */
+
+.compliance {
+  background: var(--teal-softer);
+}
+
+.compliance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 40px;
+}
+
+.compliance-item {
+  display: flex;
+  gap: 14px;
+}
+
+.compliance-item .mark {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--teal-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-deep);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.compliance-item h3 { font-size: 1rem; margin-bottom: 4px; }
+.compliance-item p { font-size: 0.92rem; margin-bottom: 0; }
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.badge {
+  border: 1px solid var(--teal);
+  color: var(--teal-deep);
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: var(--cream-card);
+}
+
+/* --- Finding help -------------------------------------------------- */
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.flow-step {
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--teal-deep);
+}
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.promise {
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+
+.promise strong {
+  display: block;
+  color: var(--teal-deep);
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+}
+
+.promise p { margin: 0; font-size: 0.92rem; }
+
+/* --- Roadmap ------------------------------------------------------ */
+
+.roadmap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.phase {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+  background: var(--cream-card);
+}
+
+.phase.active { border-color: var(--teal); }
+
+.phase .status {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--teal);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.phase h3 { margin-bottom: 14px; }
+
+.phase ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.phase li {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  padding-left: 16px;
+  position: relative;
+}
+
+.phase li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.phase .note {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-top: 14px;
+  font-style: italic;
+}
+
+/* --- FAQ ------------------------------------------------------------ */
+
+.faq-list {
+  border-top: 1px solid var(--line);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: var(--teal-deep);
+  font-size: 1.02rem;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: '+';
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  color: var(--teal);
+  flex: none;
+  margin-left: 20px;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after { transform: rotate(45deg); }
+
+.faq-item .a { padding: 0 0 24px; max-width: 68ch; }
+.faq-item .a p { margin: 0; font-size: 0.96rem; }
+
+/* --- Closing CTA ----------------------------------------------------- */
+
+.closing-cta {
+  background: var(--teal);
+  color: var(--cream);
+  text-align: left;
+}
+
+.closing-cta .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.closing-cta h2 { color: #fff; max-width: 20ch; }
+.closing-cta p { color: rgba(246, 241, 231, 0.85); max-width: 40ch; }
+
+/* --- Footer ----------------------------------------------------------- */
+
+footer {
+  padding: 34px 0 22px;
+  border-top: 1px solid var(--line);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.85fr 0.85fr 1.1fr;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-logo { width: 180px; max-width: 100%; height: auto; margin-bottom: 10px; }
+.footer-brand p { font-size: 0.88rem; max-width: 34ch; }
+
+.footer-col h4 {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--teal-deep);
+  margin: 0 0 12px;
+}
+
+.footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.footer-col a { text-decoration: none; font-size: 0.88rem; color: var(--ink-soft); }
+.footer-col a:hover { color: var(--teal); }
+
+.footer-cta-btn {
+  padding: 9px 18px;
+  font-size: 0.86rem;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.footer-email { margin: 0 0 4px; }
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  max-width: 100%;
+}
+
+.disclaimer strong { color: var(--teal-deep); }
+
+/* --- Responsive -------------------------------------------------------- */
+
+@media (max-width: 880px) {
+  .nav .wrap { height: 58px; }
+  .nav-cta { display: none; }
+  .brand-tile { width: 42px; height: 42px; border-radius: 12px; }
+  .brand-text { height: 28px; }
+
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    padding: 20px 28px 26px;
+    gap: 18px;
+  }
+  .nav-toggle { display: block; }
+
+  .hero { padding-top: 2px; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 6px; }
+
+  /* Phone demo first, so it's on screen the moment the page opens —
+     no scrolling needed to see the product's core interaction. Centered
+     rather than right-aligned: right-alignment was leaving a large,
+     unbalanced blank gap down the left edge on real phones. Sized down
+     further, alongside tighter internal spacing below, specifically so
+     the headline can also peek into view on the same first screen. */
+  .phone-mock { order: -1; align-items: center; padding: 0; }
+  .phone-frame {
+    width: 190px;
+    padding: 9px;
+    border-radius: 24px;
+    transform: rotate(3deg);
+  }
+  .phone-notch { width: 50px; height: 11px; top: 6px; border-radius: 7px; }
+  .phone-btn--power { top: 66px; height: 32px; }
+  .phone-btn--vol1 { top: 54px; height: 19px; }
+  .phone-btn--vol2 { top: 80px; height: 19px; }
+  .phone-screen { height: 340px; border-radius: 17px; }
+
+  /* Sized specifically so all 5 lines of the prefilled demo conversation
+     fit without needing to scroll inside the phone screen. A real-device
+     screenshot showed the previous (narrower) version still cutting off
+     the last message — the fix here is mainly the phone's WIDTH, not
+     its height: a wider bubble wraps to fewer lines, which recovers far
+     more vertical room than shrinking the font further would, without
+     costing any of the vertical space the headline-above-the-fold work
+     depends on. Re-verified by calculating exact text-wrap line counts
+     at these dimensions, with a large safety margin this time rather
+     than a thin one. */
+  .chat-card__head { padding: 7px 9px; gap: 5px; }
+  .chat-card__head img { width: 19px; height: 19px; }
+  .chat-card__head .who { font-size: 0.74rem; }
+  .chat-card__head .sub { font-size: 0.6rem; }
+  .chat-card__body { padding: 7px 9px 5px; gap: 5px; }
+  .bubble { padding: 5px 9px; font-size: 0.66rem; line-height: 1.22; max-width: 90%; }
+  .chat-card__input { padding: 7px 9px; gap: 5px; }
+  .chat-card__input input { padding: 6px 9px; font-size: 0.72rem; }
+  .chat-card__input button { width: 26px; height: 26px; }
+  .chat-card__note { font-size: 0.66rem; margin-top: 5px; max-width: 210px; }
+
+  .hero h1 { margin-bottom: 10px; }
+  .hero .support { margin-bottom: 14px; }
+
+  /* 2-column grid wherever the content still reads reasonably at that
+     width — single-column stacking only where a card genuinely needs
+     the full row (kept as 1fr further down). */
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .personas { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .rules { grid-template-columns: repeat(2, 1fr); }
+  .compliance-grid { grid-template-columns: repeat(2, 1fr); }
+  .promise-grid { grid-template-columns: repeat(2, 1fr); }
+  .roadmap { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+
+  .closing-cta .wrap { flex-direction: column; align-items: flex-start; text-align: left; }
+
+  .section { padding: 44px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, .faq-item summary::after { transition: none; }
+  .bubble { animation: none; }
+  .bubble.typing span { animation: none; opacity: 0.6; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}

@@ -1,0 +1,13 @@
+<svg width="200" height="160" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A message being scanned, with a rising risk-level meter beside it">
+  <rect width="200" height="160" fill="none"/>
+  <rect x="36" y="46" width="102" height="56" rx="10" fill="#DCEAE3" stroke="#17493D" stroke-width="2.5"/>
+  <path d="M56 102 L56 118 L74 102 Z" fill="#DCEAE3" stroke="#17493D" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="52" y1="64" x2="122" y2="64" stroke="#17493D" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+  <line x1="52" y1="76" x2="102" y2="76" stroke="#17493D" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+  <line x1="30" y1="38" x2="150" y2="86" stroke="#1F6F5C" stroke-width="2" stroke-dasharray="5 5" opacity="0.6"/>
+  <g>
+    <rect x="152" y="98" width="10" height="20" rx="2" fill="#1F6F5C" opacity="0.4"/>
+    <rect x="167" y="84" width="10" height="34" rx="2" fill="#1F6F5C" opacity="0.7"/>
+    <rect x="182" y="66" width="10" height="52" rx="2" fill="#1F6F5C"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg width="200" height="160" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A single message branching into three different paths of support">
+  <rect width="200" height="160" fill="none"/>
+  <circle cx="38" cy="80" r="10" fill="#DCEAE3" stroke="#17493D" stroke-width="2.5"/>
+  <path d="M48 80 C 70 80, 70 40, 100 40 H130" stroke="#17493D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M48 80 H130" stroke="#17493D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M48 80 C 70 80, 70 120, 100 120 H130" stroke="#17493D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <g transform="translate(130,26)">
+    <circle r="14" fill="#1F6F5C"/>
+    <path d="M-5 -1 C -5 -6 1 -6 0 -1 C -1 -6 5 -6 5 -1 C 5 3 0 7 0 7 C 0 7 -5 3 -5 -1 Z" fill="#F6F1E7"/>
+  </g>
+  <g transform="translate(130,80)">
+    <circle r="14" fill="#1F6F5C"/>
+    <rect x="-6" y="-7" width="12" height="14" rx="1.5" fill="none" stroke="#F6F1E7" stroke-width="1.8"/>
+    <line x1="-3" y1="-3" x2="3" y2="-3" stroke="#F6F1E7" stroke-width="1.6"/>
+    <line x1="-3" y1="1" x2="3" y2="1" stroke="#F6F1E7" stroke-width="1.6"/>
+  </g>
+  <g transform="translate(130,134)">
+    <circle r="14" fill="#1F6F5C"/>
+    <rect x="-6.5" y="-6" width="13" height="12" rx="1.5" fill="none" stroke="#F6F1E7" stroke-width="1.8"/>
+    <line x1="-6.5" y1="-2.5" x2="6.5" y2="-2.5" stroke="#F6F1E7" stroke-width="1.6"/>
+  </g>
+</svg>

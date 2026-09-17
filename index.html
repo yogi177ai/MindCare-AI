@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindCare AI — A Trusted WhatsApp Companion for First-Line Emotional Support</title>
+<meta name="description" content="MindCare AI is a WhatsApp-based mental-wellness companion offering supportive, non-diagnostic conversation, coping guidance, and a direct line to trained humans when it matters most.">
+<meta property="og:title" content="MindCare AI — A Trusted WhatsApp Companion for First-Line Emotional Support">
+<meta property="og:description" content="A WhatsApp companion for first-line emotional support, built with safety before engagement.">
+<meta property="og:image" content="assets/images/mindcare-logo-lockup.png">
+<link rel="icon" type="image/png" href="assets/images/mindcare-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" style="position:absolute;left:-999px;">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-tile"><img src="assets/images/mindcare-icon.png" alt=""></span>
+      <img src="assets/images/mindcare-logo-text.png" alt="MindCare AI" class="brand-text">
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#who">Who it's for</a></li>
+        <li><a href="#safety">Safety &amp; privacy</a></li>
+        <li><a href="#booking">Finding help</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="https://wa.me/" target="_blank" rel="noopener">Message us</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <h1>A Trusted WhatsApp Companion for First-Line Emotional Support</h1>
+        <p class="support">MindCare AI meets people inside WhatsApp — no download, no waiting room — with supportive, non-diagnostic conversation, grounded coping guidance, and an immediate path to a trained human whenever a conversation needs one.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://wa.me/" target="_blank" rel="noopener">Start a conversation</a>
+          <a class="btn btn-ghost" href="#safety">See the safety model</a>
+        </div>
+        <div class="trust-line">Always available 24/7 <span class="sep">|</span> No stigma <span class="sep">|</span> No waitlist</div>
+        <div class="trust-line trust-line--bold">Trusted <span class="sep">|</span> Safe <span class="sep">|</span> Private <span class="sep">|</span> Non-Judgmental</div>
+        <div class="trust-line trust-badge">HIPAA &amp; DPDP Compliant <span class="sep">|</span> Your data, Your control</div>
+      </div>
+
+      <div class="phone-mock">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-btn phone-btn--power"></div>
+          <div class="phone-btn phone-btn--vol1"></div>
+          <div class="phone-btn phone-btn--vol2"></div>
+          <div class="phone-screen">
+            <div class="chat-card__head">
+              <img src="assets/images/mindcare-icon.png" alt="">
+              <div>
+                <div class="who">MindCare AI</div>
+                <div class="sub">Business account</div>
+              </div>
+            </div>
+            <div class="chat-card__body" id="chatBody">
+              <div class="bubble them">Hi, I'm here to listen. How are you doing today?</div>
+              <div class="bubble me">I need help</div>
+              <div class="bubble them">Pls feel free to discuss</div>
+              <div class="bubble me">feeling exams stress</div>
+              <div class="bubble them">Exam pressure can feel heavy. Want to try a quick 90-second breathing exercise?</div>
+            </div>
+            <form class="chat-card__input" id="chatForm">
+              <input type="text" id="chatInput" placeholder="Type a message…" autocomplete="off" maxlength="240" aria-label="Type a message to try the demo">
+              <button type="submit" aria-label="Send message">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 12 L21 4 L14 20 L11 13 L3 12 Z" fill="currentColor"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <p class="chat-card__note">Interactive preview of the conversation style — not a live connection to MindCare AI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM QUOTE -->
+  <section class="quote-section">
+    <div class="wrap">
+      <blockquote>
+        "People often need support the moment a feeling gets hard to carry — not after a two-week waitlist, or the courage to say it out loud to someone new."
+        <footer>Why MindCare AI starts the conversation somewhere people already are.</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">How it works</span>
+        <h2>Every message travels the same careful path</h2>
+        <p>Before a reply is ever sent, each message is screened, routed, and checked — so support stays consistent whether someone is journaling at midnight or in real distress.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="num">01</span>
+          <img src="assets/images/step-01-consent.svg" alt="A shield with a checkmark and a trailing set of memory dots">
+          <h3>Consent, then memory</h3>
+          <p>Ongoing conversation only begins once consent is captured and stored. Context is kept bounded and configurable — never open-ended data hoarding.</p>
+        </div>
+        <div class="step">
+          <span class="num">02</span>
+          <img src="assets/images/step-02-screening.svg" alt="A message being scanned, with a rising risk-level meter beside it">
+          <h3>Safety screening on every message</h3>
+          <p>A dedicated risk layer classifies each inbound message as LOW, MEDIUM, HIGH, or UNKNOWN/REVIEW — before anything else happens. If the classifier fails, it fails closed into REVIEW, never LOW.</p>
+        </div>
+        <div class="step">
+          <span class="num">03</span>
+          <img src="assets/images/step-03-routing.svg" alt="A single message branching into three different paths of support">
+          <h3>Routed to the right kind of help</h3>
+          <p>Emotional support, coping techniques, psychoeducation, journaling prompts, appointment requests, or a plain question — intent routing sends each message down the right path, using only approved, reviewed knowledge.</p>
+        </div>
+        <div class="step">
+          <span class="num">04</span>
+          <img src="assets/images/step-04-escalation.svg" alt="A conversation handing off from the AI to a human reviewer, flagged by an alert">
+          <h3>Escalation when it counts</h3>
+          <p>HIGH or REVIEW conversations create a human escalation case immediately, with the decisions, model version, and policy version logged for audit — without hoarding raw sensitive content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="section" id="who">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Who it's for</span>
+        <h2>Three people rely on this to work correctly</h2>
+        <p>Each side of the product sees a different slice — a conversation, a queue, or a dashboard — but all three share one safety model underneath.</p>
+      </div>
+
+      <div class="personas">
+        <div class="persona">
+          <span class="role">End user</span>
+          <h3>Someone who needs to talk, right now</h3>
+          <p>Accessible emotional support, reflection prompts, coping guidance, and grounded information — reachable the moment it's needed, without booking anything first.</p>
+        </div>
+        <div class="persona">
+          <span class="role">Counsellor / human reviewer</span>
+          <h3>The person a conversation escalates to</h3>
+          <p>Prioritized escalations arrive with conversation context and risk signals already attached, plus the ability to take over a conversation directly.</p>
+        </div>
+        <div class="persona">
+          <span class="role">Program administrator</span>
+          <h3>The person accountable for the whole system</h3>
+          <p>Aggregate metrics, a safety audit trail, configuration control, and access management — the view needed to prove the system is behaving as designed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY MODEL -->
+  <section class="section safety" id="safety">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Safety model</span>
+        <h2>Safety before engagement — not a slogan, a set of hard limits</h2>
+        <p>MindCare AI is built around one governing rule: it supports, it never diagnoses. Everything below is enforced, tested, and versioned.</p>
+      </div>
+
+      <div class="rules">
+        <div class="rule"><span class="tag">S-01</span><p>The system must not diagnose.</p></div>
+        <div class="rule"><span class="tag">S-02</span><p>The system must not prescribe or alter medication.</p></div>
+        <div class="rule"><span class="tag">S-04</span><p>A risk classifier failure fails closed into REVIEW — never LOW.</p></div>
+        <div class="rule"><span class="tag">S-05/06</span><p>Safety policies are versioned, and safety regression tests are release-blocking.</p></div>
+        <div class="rule"><span class="tag">S-07</span><p>Every human escalation is observable and auditable — nothing disappears silently.</p></div>
+        <div class="rule"><span class="tag">S-08</span><p>Every message is encrypted in transit and at rest — a safety boundary, not just a compliance checkbox, since the honesty this product depends on requires the conversation to actually stay private.</p></div>
+        <div class="rule"><span class="tag">Reviewed</span><p>Crisis protocols and response content are reviewed by licensed clinical advisors before release, not just by the engineering team.</p></div>
+      </div>
+
+      <div class="callout">
+        <span class="tag">S-03 — High-risk cases never continue as usual</span>
+        <p>The moment a conversation is classified HIGH or REVIEW, the normal flow — including any in-progress booking — freezes, and the approved crisis and human-escalation protocol takes over instead.</p>
+      </div>
+
+      <p class="guardrails-note"><strong style="color:#fff;">Guardrails.</strong> Output is validated against diagnosis, medication advice, unsafe content, unsupported claims, dependency language, privacy violations, and crisis mishandling before it's sent.</p>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE / DATA PROTECTION -->
+  <section class="section compliance" id="compliance">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Data protection</span>
+        <h2>Your conversation is treated like the sensitive thing it is</h2>
+        <p>Mental health data deserves the same handling as any other health information — encrypted, access-controlled, and never used for anything you haven't agreed to.</p>
+      </div>
+
+      <div class="compliance-grid">
+        <div class="compliance-item">
+          <div class="mark">H</div>
+          <div>
+            <h3>HIPAA-aligned handling</h3>
+            <p>Health-related conversation data is handled under HIPAA-aligned safeguards — access controls, audit logging, and minimum-necessary use — for deployments touching U.S. patient data.</p>
+          </div>
+        </div>
+        <div class="compliance-item">
+          <div class="mark">E</div>
+          <div>
+            <h3>Encrypted in transit and at rest</h3>
+            <p>Every message is encrypted end-to-end in transit and encrypted at rest in storage — nobody outside the escalation path can read a conversation in the clear.</p>
+          </div>
+        </div>
+        <div class="compliance-item">
+          <div class="mark">D</div>
+          <div>
+            <h3>DPDP Act aligned</h3>
+            <p>For deployments in India, data collection, storage, and consent flows are built to align with the Digital Personal Data Protection Act.</p>
+          </div>
+        </div>
+        <div class="compliance-item">
+          <div class="mark">R</div>
+          <div>
+            <h3>Your data, your control</h3>
+            <p>Bounded memory, visible consent, and the ability to request deletion — nothing is retained longer than the product needs it to provide continuity of care.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="badge-row">
+        <span class="badge">HIPAA-aligned safeguards</span>
+        <span class="badge">DPDP Act aligned</span>
+        <span class="badge">Encrypted in transit &amp; at rest</span>
+        <span class="badge">Never sold to third parties</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINDING HELP -->
+  <section class="section" id="booking">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Finding human help</span>
+        <h2>Asking for a therapist works like asking a knowledgeable friend</h2>
+        <p>When someone explicitly asks to find a nearby therapist, MindCare AI can search an approved provider directory and, where a scheduling integration exists, check real availability.</p>
+      </div>
+
+      <div class="flow">
+        <span class="flow-step">Get permitted location context</span>
+        <span class="flow-step">Search approved provider sources</span>
+        <span class="flow-step">Filter by service type &amp; attributes</span>
+        <span class="flow-step">Present options for the user to choose</span>
+        <span class="flow-step">Check live availability, if integrated</span>
+        <span class="flow-step">Confirm, book, and return a reference</span>
+      </div>
+
+      <div class="promise-grid">
+        <div class="promise">
+          <strong>No clinical judgment calls.</strong>
+          <p>The AI can schedule administratively, but never determines clinical suitability, diagnosis, or urgency from symptoms alone.</p>
+        </div>
+        <div class="promise">
+          <strong>Nothing invented.</strong>
+          <p>Provider data always comes from an approved directory — therapists, credentials, availability, prices, and reviews are never fabricated.</p>
+        </div>
+        <div class="promise">
+          <strong>No false confirmations.</strong>
+          <p>Without a live booking integration, a request becomes a callback task — MindCare AI never claims an appointment exists when it doesn't.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section" id="roadmap">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Roadmap</span>
+        <h2>Building in the right order</h2>
+        <p>The safety and conversation core ships first. Everything that widens reach or adds convenience comes after that foundation is proven.</p>
+      </div>
+
+      <div class="roadmap">
+        <div class="phase active">
+          <span class="status">Shipping now — MVP</span>
+          <h3>The safety-first core</h3>
+          <ul>
+            <li>WhatsApp webhook FastAPI service</li>
+            <li>Risk classifier</li>
+            <li>LangGraph orchestration</li>
+            <li>RAG abstraction</li>
+            <li>Guardrail policy engine</li>
+            <li>PostgreSQL persistence</li>
+            <li>Human escalation record</li>
+            <li>DeepEval test suite</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <span class="status">Phase 2</span>
+          <h3>Reach &amp; oversight</h3>
+          <ul>
+            <li>Counsellor dashboard</li>
+            <li>Appointment booking</li>
+            <li>Multilingual support</li>
+            <li>Voice notes</li>
+            <li>Tenant administration</li>
+            <li>Analytics</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <span class="status">Phase 3</span>
+          <h3>Clinical readiness</h3>
+          <ul>
+            <li>Validated clinical workflows*</li>
+            <li>Formal safety case</li>
+            <li>External red-team program</li>
+            <li>Jurisdiction-specific compliance</li>
+          </ul>
+          <p class="note">*Only after qualified clinical and regulatory review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Questions</span>
+        <h2>Before you start a conversation</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Is MindCare AI a replacement for therapy?</summary>
+          <div class="a"><p>No. It supports, it never diagnoses, prescribes, or replaces licensed treatment. Think of it as a first-line companion and a bridge to a human therapist — not a substitute for one.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Who can actually read my messages?</summary>
+          <div class="a"><p>Conversations are encrypted in transit and at rest. A human only sees a conversation when it's escalated — HIGH or REVIEW risk, or if you ask to speak with a person directly — and that access is logged.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is it free to use?</summary>
+          <div class="a"><p>MindCare AI is built to remove cost as a barrier to a first conversation. Any paid tiers or organizational plans would be scoped and communicated clearly before you'd ever be asked to pay.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What happens if I'm in a real crisis?</summary>
+          <div class="a"><p>The moment a message is classified HIGH or REVIEW, the normal conversation flow stops and the crisis protocol takes over immediately, with a human escalation created in parallel. For any immediate, life-threatening emergency, please contact your local emergency services directly — MindCare AI is not built to replace them.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What languages does it support?</summary>
+          <div class="a"><p>English today. Multilingual support is on the Phase 2 roadmap, alongside voice notes.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -->
+  <section class="section closing-cta">
+    <div class="wrap">
+      <div>
+        <h2>You don't have to carry it alone.</h2>
+        <p>Start a conversation on WhatsApp — it's free to begin, private, and there right now, whenever you're ready.</p>
+      </div>
+      <a class="btn btn-on-dark" href="https://wa.me/" target="_blank" rel="noopener">Message us on WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/mindcare-logo-lockup.png" alt="MindCare AI — A Healthier Mind. A Brighter You." class="footer-logo">
+        <p>A WhatsApp companion for first-line emotional support, built with safety before engagement.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#who">Who it's for</a></li>
+          <li><a href="#booking">Finding help</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="#safety">Safety model</a></li>
+          <li><a href="#compliance">Data protection</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Start a conversation</h4>
+        <a class="btn btn-ghost footer-cta-btn" href="https://wa.me/" target="_blank" rel="noopener">Message us</a>
+        <p class="footer-email"><a href="mailto:hello@mindcare.ai">hello@mindcare.ai</a></p>
+        <p class="footer-email"><a href="mailto:yogeshgupta177@gmail.com">yogeshgupta177@gmail.com</a></p>
+      </div>
+    </div>
+
+    <p class="disclaimer">
+      <strong>Important:</strong> MindCare AI is not an emergency response service, a licensed therapist, or a diagnostic tool. It does not diagnose conditions or recommend medication. If you or someone you know is in immediate danger or facing a life-threatening crisis, contact your local emergency services immediately.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

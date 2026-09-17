@@ -1,0 +1,15 @@
+<svg width="200" height="160" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A conversation handing off from the AI to a human reviewer, flagged by an alert">
+  <rect width="200" height="160" fill="none"/>
+  <circle cx="66" cy="80" r="30" fill="#DCEAE3" stroke="#17493D" stroke-width="2.5"/>
+  <path d="M56 74 h20 M56 86 h14" stroke="#17493D" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="146" cy="80" r="30" fill="#1F6F5C"/>
+  <circle cx="146" cy="70" r="8" fill="#F6F1E7"/>
+  <path d="M128 100 C128 88 137 82 146 82 C155 82 164 88 164 100" stroke="#F6F1E7" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M96 80 H116" stroke="#17493D" stroke-width="2.5" stroke-dasharray="4 5" stroke-linecap="round"/>
+  <path d="M110 73 L117 80 L110 87" stroke="#17493D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <g transform="translate(96,34)">
+    <circle r="12" fill="#B5482D" opacity="0.92"/>
+    <line x1="0" y1="-5" x2="0" y2="1.5" stroke="#F6F1E7" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="0" cy="6" r="1.4" fill="#F6F1E7"/>
+  </g>
+</svg>
